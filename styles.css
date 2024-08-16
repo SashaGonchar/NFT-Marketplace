@@ -67,6 +67,7 @@ body{
     display: flex;
     align-items:flex-end;
     flex-grow:1;
+    margin-bottom: 10px;
 }
 
 .navbar_container:nth-child(2){
@@ -135,10 +136,10 @@ body{
     width: 100%;
     display: flex;
     height: 48px;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
-.title_container{
+.title_container{                                                                                                       /*весь класс можно убрать и переделать через br и span так же как я придумал сделать в блоке с фоловерами*/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -174,12 +175,13 @@ body{
 }
 
 .profile{
+    display: flex;
     margin-top:30px;
     width: 100%;
-    height:272px;
+    height:332px;
 }
 
-.profile_container{
+.profile_container:nth-child(1){
     height:292px;
     width:380px;
     display: flex;
@@ -229,4 +231,39 @@ hr{
     height:30px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.profile_container:nth-child(2){
+    margin-left: 30px;
+    padding-bottom: 0;
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.profile_container:nth-child(2) p:nth-child(1){
+    margin-top:55px;
+    flex:0 1 100%;
+}
+
+.profile_container:nth-child(2) div{
+    flex:0 1 calc(50% - 80px);
+    height: 40px;
+    margin: 20px 30px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile_container:nth-child(2) div p:nth-child(2){
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.unfollow{
+    background: rgb(220, 53, 70);
+    height:28px;
+    width: 94px;
+    border: none;
+    justify-self: flex-end;
 }
